@@ -19,3 +19,7 @@
 1. git add .
 2. git commit -m "Your Message"
 3. git push origin [master/main]
+
+## Hirarki Styling
+
+Inline stlying > id > class > element/tag

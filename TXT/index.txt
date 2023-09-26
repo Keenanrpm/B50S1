@@ -1,0 +1,129 @@
+index.html day 1
+<html>
+    <head>
+        <title>Creating Card</title>
+    </head>
+
+    <body>
+        <div style="
+            width: 350px;
+            border: 1px solid #00000033;
+            margin: 90px auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00000040;
+            ">
+
+            <img
+            /*style= "width: 100%; border-radius: 10px 10px 0 0;"*/
+            style="width: 100%; border-radius: 15px;" 
+            src="./img/IMG_7008.jpg"
+            alt="profile-img"
+            >
+
+            <h2>Keenan Raiputra</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vero cupiditate quibusdam perspiciatis quod. Id, quidem pariatur unde tempora illo expedita amet quam laudantium asperiores modi accusantium dolore facere voluptatem.</p>
+
+            <table style=
+            "border: 1px solid black;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            ">
+
+                <tr style=
+                "background-color: grey; 
+                color: white;
+                ">
+                    <th>Experience</th>
+                    <th>Tahun</th>
+                </tr>
+
+                <tr>
+                    <td>Junior Front End Developer</td>
+                    <td>2021</td>
+                </tr>
+
+                <tr>
+                    <td>Junior Back End Developer</td>
+                    <td>2022</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>
+
+index.html day 2
+<html>
+    <head>
+        <title>Personal Web</title>
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="assets/style.css"/ >
+
+        <!-- RemixIcon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <nav class="nav-left-container">
+            <div>
+              <ul>
+                <li>
+                    <a href="index.html">
+                        <img style="width: 50px;" src="img/crown.png" alt="logo" />
+                    </a>
+                </li>
+                <li>
+                  <a href="index.html" class="active"> Home </a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-right-container">
+                <a href="contact.html">Contact</a>
+            </div>
+          </nav>
+
+        <div class="container">
+            <!-- Content -->
+            <section>
+            <div></div>
+            <div class="content">
+                <h3>Hi Welcome to my hut</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perferendis, sequi id ipsam quidem et facere eligendi accusamus amet quibusdam odio doloremque itaque expedita dolorum voluptate nihil nostrum quo labore.
+                </p>
+                <button>Contact</button>
+                <p>Download CV <i class="ri-download-2-fill"> </i> </p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social">
+                <span><i class="ri-linkedin-fill"></i></i></span>
+                <span><i class="ri-instagram-line"></i></span>
+                <span><i class="ri-facebook-fill"></i></span>
+                <span><i class="ri-twitter-fill"></i></span>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <img src="img/IMG_9333.JPG" alt="profile-img">
+                <div class="name">
+                    <h3>Keenan R. Permana</h3>
+                    <h5>Mahasiswa</h5>
+                </div>
+            </div>
+
+            <div class="container-right">
+
+            </div>
+            </section>
+        </div>
+    </body>
+</html>
