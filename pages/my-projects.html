@@ -1,0 +1,226 @@
+<html>
+<head>
+  <title>My Projects</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/my-project.css" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" href="images/logo/crown.png">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a class="navLink" href="/">
+            <img width="50" src="../images/logo/crown.png" />
+          </a>
+        </li>
+        <div class="navbar__linksDesktop">
+          <li>
+            <a href="/" class="navLink">Home</a>
+          </li>
+          <li>
+            <a href="my-projects.html" class="navLink active">My Projects</a>
+          </li>
+          <li class="ml-auto">
+            <a href="contact.html" class="btn main">Contact Me</a>
+          </li>
+        </div>
+        <div class="navbar__linksMobile">
+          <button class="ml-auto" onclick="openNavbar(event)">
+            <i class="fa-2xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Nav Bar Mobile-->
+    <nav class="navbar__mobile">
+      <ul>
+        <li>
+          <a href="/" class="navLink">Home</a>
+        </li>
+        <li>
+          <a href="my-projects.html" class="navLink active">My Projects</a>
+        </li>
+        <li style="margin-top: 1rem">
+          <a href="contact.html" class="btn main">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Project Form -->
+      <section class="main__container">
+        <!-- Form -->
+        <h2 class="title">ADD MY PROJECT</h2>
+        <form class="project__form" onsubmit="addProject(event)">
+          <div class="form__item">
+            <label for="project-name">Project Name</label>
+            <input type="text" name="project-name" id="project-name" />
+          </div>
+          <div class="form__date">
+            <div class="form__item">
+              <label for="start-date">Start Date</label>
+              <input type="date" name="start-date" id="start-date" />
+            </div>
+            <div class="form__item">
+              <label for="end-date">End Date</label>
+              <input type="date" name="end-date" id="end-date" />
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="description">Description</label>
+            <textarea
+              name="Description"
+              id="description"
+              class="input__textArea"
+            ></textarea>
+          </div>
+
+          <!-- Tech -->
+          <div class="form__item">
+            <label for="technologies">Technologies</label>
+            <div class="form__technologies">
+              <div class="form__item">
+                <label for="nodeJS">
+                  <input
+                    type="checkbox"
+                    value="Node JS"
+                    name="technologies"
+                    id="nodeJS"
+                  />
+                  <img width="16" src="../images/logo/nodejs.svg" /> NodeJS</label>
+              </div>
+
+              <div class="form__item">
+                <label for="reactJS">
+                  <input
+                    type="checkbox"
+                    value="React JS"
+                    name="technologies"
+                    id="reactJS"
+                  />
+                  <img width="16" src="../images/logo/reactjs.svg" />ReactJS</label>
+              </div>
+
+              <div class="form__item">
+                <label
+                  for="nextJS"
+                  style="display: flex; align-items: center; gap: 0.4rem"
+                >
+                  <input
+                    type="checkbox"
+                    value="Next JS"
+                    name="technologies"
+                    id="nextJS"
+                  />
+                  <img
+                    width="16"
+                    src="../images/logo/nextjs.svg"
+                    alt="nextjs logo"
+                    srcset=""
+                  />NextJS</label>
+              </div>
+
+              <div class="form__item">
+                <label
+                  for="typescript"
+                  style="display: flex; align-items: center; gap: 0.4rem"
+                >
+                  <input
+                    type="checkbox"
+                    value="Typescript"
+                    name="technologies"
+                    id="typescript"
+                  />
+                  <img
+                    width="16"
+                    src="../images/logo/typescript.svg"
+                    alt="typescript logo"
+                    srcset=""
+                  />Typescript</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Img -->
+          <div class="form__item">
+            <label for="upload-image">Upload Image</label>
+            <input
+              type="file"
+              name="upload-image"
+              id="upload-image"
+              class="input__file"
+            />
+          </div>
+          <button
+            class="btn main"
+            type="submit"
+            style="width: fit-content; margin-left: auto"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <!-- My Project -->
+      <section>
+        <h2 class="title">MY PROJECTS</h2>
+        <div id="projects__container" class="projects__container">
+          <div class="project__item">
+            <a href="../pages/project.html">
+              <img class="project__image" src="../images/project.png" />
+              <div>
+                <h3 class="project__title">Dumbways Mobile App - 2021</h3>
+                <p class="project__duration">Duration: 3 Month</p>
+                <p class="project__postedAt">Posted at:</p>
+              </div>
+              <p class="project__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                reprehenderit quos architecto esse porro dolore ducimus
+                molestiae quasi pariatur? A cumque iure accusamus aperiam quis
+                corrupti architecto est provident quia sapiente. Voluptas
+                inventore ratione odio aliquid magni blanditiis quis id odit
+                eius mollitia ducimus ut praesentium, tenetur reiciendis
+                doloremque! Distinctio?
+              </p>
+              <div class="project__technologies">
+                <i class="fa-2xl fa-brands fa-node"></i>
+                <i class="fa-2xl fa-brands fa-react"></i>
+                <img
+                  width="32"
+                  src="../images/logo/nextjs.svg"
+                  alt="nextjs logo"
+                  srcset=""
+                />
+                <img
+                  width="32"
+                  src="../images/logo/typescript.svg"
+                  alt="typescript logo"
+                  srcset=""
+                />
+              </div>
+            </a>
+            <div class="project__btns">
+              <button class="btn main">Edit</button>
+              <button class="btn alt">Submit</button>
+            </div>
+            <div class="project__timeAfterPosted">
+              <p>1 Seconds Ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script -->
+    <script src="../js/my-projects.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

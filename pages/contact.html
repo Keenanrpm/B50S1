@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Contact Me</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/utils.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="icon" href="images/logo/crown.png"/>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a class="navLink" href="/">
+            <img width="50" src="../images/logo/crown.png" />
+          </a>
+        </li>
+        <div class="navbar__linksDesktop">
+          <li>
+            <a href="/" class="navLink">Home</a>
+          </li>
+          <li>
+            <a href="my-projects.html" class="navLink">My Projects</a>
+          </li>
+          <li class="ml-auto">
+            <a href="contact.html" class="btn main">Contact Me</a>
+          </li>
+        </div>
+        <div class="navbar__linksMobile">
+          <button class="ml-auto" onclick="openNavbar(event)">
+            <i class="fa-2xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Nav Bar Mobile-->
+    <nav class="navbar__mobile">
+      <ul>
+        <li>
+          <a href="/" class="navLink">Home</a>
+        </li>
+        <li>
+          <a href="my-projects.html" class="navLink">My Projects</a>
+        </li>
+        <li style="margin-top: 1rem">
+          <a href="contact.html" class="btn main">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main class="main__container">
+      <!-- Contact Form -->
+      <form class="form__contact" onsubmit="sendMail(event)">
+        <h2 class="form__title title">GET IN TOUCH</h2>
+        <div class="form__item">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form__item">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form__item">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="form__item">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value=""> </option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Fullstack">Fullstack</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="input__textArea"
+          ></textarea>
+        </div>
+        <!-- Submit -->
+        <div class="form__contactButtons">
+          <button
+            type="submit"
+            class="btn main"
+            style="width: fit-content; margin-left: auto"
+          > Submit </button>
+        </div>
+      </form>
+    </main>
+    <!-- Script -->
+    <script src="../js/contact.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

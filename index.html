@@ -1,85 +1,105 @@
 <html>
-    <head>
-        <title>Personal Web</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/style3.css">
-        <!-- FONT -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="img/crown.png">
-    </head>
+<head>
+  <title>Personal Web</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" href="images/logo/crown.png"/>
+</head>
 
-    <body>
-        <!-- Nav Bar -->
-        <nav>
-            <div class="left-side">
-                <ul>
-                    <li>
-                        <img src="img/crown.png" alt="logo">
-                    </li>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./blog.html">My Project</a>
-                    </li>
-                </ul>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a class="navLink" href="/">
+            <img width="50" src="images/logo/crown.png" />
+          </a>
+        </li>
+        <div class="navbar__linksDesktop">
+          <li>
+            <a href="index.html" class="navLink active">Home</a>
+          </li>
+          <li>
+            <a href="pages/my-projects.html" class="navLink">My Projects</a>
+          </li>
+          <li class="ml-auto">
+            <a href="pages/contact.html" class="btn main">Contact Me</a>
+          </li>
+        </div>
+        <div class="navbar__linksMobile">
+          <button class="ml-auto" onclick="openNavbar(event)">
+            <i class="fa-2xl fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Nav Bar Mobile-->
+    <nav class="navbar__mobile">
+      <ul>
+        <li>
+          <a href="index.html" class="navLink active">Home</a>
+        </li>
+        <li>
+          <a href="pages/my-projects.html" class="navLink">My Projects</a>
+        </li>
+        <li style="margin-top: 1rem">
+          <a href="pages/contact.html" class="btn main">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main class="main__container" style="padding-top: 5rem">
+
+      <!-- Card Main-->
+      <section class="card__container">
+        <div class="card__left">
+          <h1 class="card__title">Hi Welcome To My Hut</h1>
+          <p class="card__desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, dolorum? Quisquam laudantium fugiat, inventore fuga id ea dicta quaerat maiores corporis soluta voluptates provident cum eius dolores velit magni saepe error nisi, porro molestiae non deserunt necessitatibus, explicabo aperiam. Accusamus, dolorem qui modi nesciunt culpa consequatur adipisci pariatur dicta cum iusto, tempore, quaerat a?
+          </p>
+          <div class="card__btns">
+            <button class="btn main">Contact</button>
+            <button class="btn alt">
+              Download CV <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+
+          <!-- Card Left-->
+          <div class="card__socials">
+            <a href="#" class="card__socialItem">
+              <i class="fa-2xl fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="card__socialItem">
+              <i class="fa-2xl fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#" class="card__socialItem">
+              <i class="fa-2xl fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="card__socialItem">
+              <i class="fa-2xl fa-brands fa-square-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Right-->
+        <div class="card__right">
+          <div class="profile">
+            <img class="card__profileImage" src="images/profile.jpg" />
+            <div class="card__profileDetails">
+              <strong>Keenan Permana</strong>
+              <p>Mahasiswa</p>
             </div>
-            <div class="right-side">
-                <a href="./contact.html">Contact Me</a>
-            </div>
-        </nav>
-
-        <!-- Main -->
-        <section>
-            <div class="container">
-                <div class="content">
-                    <div class="line-1">
-                        <h2>Hi, Welcome to my hut</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, dolorum? Quisquam laudantium fugiat, inventore fuga id ea dicta quaerat maiores corporis soluta voluptates provident cum eius dolores velit magni saepe error nisi, porro molestiae non deserunt necessitatibus, explicabo aperiam. Accusamus, dolorem qui modi nesciunt culpa consequatur adipisci pariatur dicta cum iusto, tempore, quaerat a?
-                        </p>
-                    </div>
-
-                    <div class="line-2">
-                        <div class="button" style="text-align: left;">
-                            <a href="https://api.whatsapp.com/">
-                                <button class="button-detail">Contact</button>
-                            </a>
-                        </div>
-
-                        <div class="line-2-2">
-                            <a class="download" href=" ">Download CV</a>
-                            <a href=""><img src="img/download-logo.png" alt="download"></a>
-                        </div>
-                    </div>
-
-                    <div class="line-3">
-                        <a href="linkedin.com"
-                           class="fa fa-linkedin"
-                           target="_blank"
-                        ></a>
-                        <a href="instagram.com"
-                           class="fa fa-instagram"
-                           target="_blank"
-                        ></a>
-                        <a href="facebook.com"
-                           class="fa fa-facebook"
-                           target="_blank"
-                        ></a>
-                        <a href="twitter.com"
-                           class="fa fa-twitter"
-                           target="_blank"
-                        ></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-content">
-                        <img src="img/ry-cloze-enforcer-v002.jpg" alt="profile">
-                        <h4>Keenan R. Permana</h4>
-                        <p>Mahasiswa</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script -->
+    <script src="js/navbar.js"></script>
+</body>
 </html>
